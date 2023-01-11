@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:todolist/Infrastructure/enums/sizes_enum.dart';
+import 'package:todolist/infrastructure/enums/sizes_enum.dart';
 
 class PasswordInput extends StatefulWidget{
   final String placeholder;

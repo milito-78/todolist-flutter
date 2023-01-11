@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todolist/Presenter/widgets/logo_widget.dart';
+import 'package:todolist/presenter/widgets/logo_widget.dart';
 
 class AuthLogoWidget extends StatelessWidget {
   final double logoWidth;

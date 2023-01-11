@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:todolist/Infrastructure/enums/sizes_enum.dart';
-import 'package:todolist/Presenter/widgets/edit_work_modal_widget.dart';
-import 'package:todolist/Presenter/widgets/todo_details_appbar_widget.dart';
+import 'package:todolist/infrastructure/enums/sizes_enum.dart';
+import 'package:todolist/presenter/widgets/edit_work_modal_widget.dart';
+import 'package:todolist/presenter/widgets/todo_details_appbar_widget.dart';
 
 class TodoDetailsScreen extends StatefulWidget {
   @override

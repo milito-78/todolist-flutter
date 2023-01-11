@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todolist/Presenter/widgets/todo_lists/todolist_widget.dart';
+import 'package:todolist/presenter/widgets/todo_lists/todolist_widget.dart';
 
 class TodoListsWidget extends StatelessWidget {
   @override

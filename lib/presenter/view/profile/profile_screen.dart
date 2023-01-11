@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:todolist/Infrastructure/enums/routes_enum.dart';
-import 'package:todolist/Infrastructure/enums/sizes_enum.dart';
-import 'package:todolist/Presenter/widgets/background_profile_widget.dart';
-import 'package:todolist/Presenter/widgets/buttons/submit_button_widget.dart';
-import 'package:todolist/Presenter/widgets/custom_appbar_widget.dart';
-import 'package:todolist/Presenter/widgets/loading_widget.dart';
+import 'package:todolist/infrastructure/enums/routes_enum.dart';
+import 'package:todolist/infrastructure/enums/sizes_enum.dart';
+import 'package:todolist/presenter/widgets/background_profile_widget.dart';
+import 'package:todolist/presenter/widgets/buttons/submit_button_widget.dart';
+import 'package:todolist/presenter/widgets/custom_appbar_widget.dart';
+import 'package:todolist/presenter/widgets/loading_widget.dart';
 
 class ProfileScreen extends StatefulWidget {
   @override

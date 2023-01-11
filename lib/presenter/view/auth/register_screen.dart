@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:todolist/Infrastructure/enums/routes_enum.dart';
-import 'package:todolist/Infrastructure/enums/sizes_enum.dart';
-import 'package:todolist/Presenter/widgets/buttons/submit_button_widget.dart';
-import 'package:todolist/Presenter/widgets/inputs/input_widget.dart';
-import 'package:todolist/Presenter/widgets/loading_widget.dart';
-import 'package:todolist/Presenter/widgets/logo_widget.dart';
+import 'package:todolist/infrastructure/enums/routes_enum.dart';
+import 'package:todolist/infrastructure/enums/sizes_enum.dart';
+import 'package:todolist/presenter/widgets/buttons/submit_button_widget.dart';
+import 'package:todolist/presenter/widgets/inputs/input_widget.dart';
+import 'package:todolist/presenter/widgets/loading_widget.dart';
 import 'package:todolist/presenter/widgets/auth_logo_widget.dart';
 import 'package:todolist/presenter/widgets/buttons/auth_text_button_widget.dart';
 

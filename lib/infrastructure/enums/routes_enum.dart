@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:todolist/Presenter/view/forget_password/code_screen.dart';
-import 'package:todolist/Presenter/view/forget_password/forget_password_screen.dart';
-import 'package:todolist/Presenter/view/forget_password/reset_password_screen.dart';
-import 'package:todolist/Presenter/view/home_screen/home_screen.dart';
-import 'package:todolist/Presenter/view/profile/change_password_screen.dart';
-import 'package:todolist/Presenter/view/profile/profile_screen.dart';
-import 'package:todolist/Presenter/view/auth/register_screen.dart';
-import 'package:todolist/Presenter/view/splash/splash_screen.dart';
-import 'package:todolist/Presenter/view/auth/login_screen.dart';
-import 'package:todolist/Presenter/view/todo/todo_details_screen.dart';
+import 'package:todolist/presenter/view/forget_password/code_screen.dart';
+import 'package:todolist/presenter/view/forget_password/forget_password_screen.dart';
+import 'package:todolist/presenter/view/forget_password/reset_password_screen.dart';
+import 'package:todolist/presenter/view/home_screen/home_screen.dart';
+import 'package:todolist/presenter/view/profile/change_password_screen.dart';
+import 'package:todolist/presenter/view/profile/profile_screen.dart';
+import 'package:todolist/presenter/view/auth/register_screen.dart';
+import 'package:todolist/presenter/view/splash/splash_screen.dart';
+import 'package:todolist/presenter/view/auth/login_screen.dart';
+import 'package:todolist/presenter/view/todo/todo_details_screen.dart';
 
 class RouteName {
   static const String register          = "/register";

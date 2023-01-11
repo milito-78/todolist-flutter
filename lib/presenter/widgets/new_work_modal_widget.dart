@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 import 'package:jiffy/jiffy.dart';
-import 'package:todolist/Infrastructure/enums/sizes_enum.dart';
-import 'package:todolist/Presenter/widgets/buttons/create_button_widget.dart';
-import 'package:todolist/Presenter/widgets/inputs/create_input_widget.dart';
-import 'package:todolist/Presenter/widgets/line_widget.dart';
+import 'package:todolist/infrastructure/enums/sizes_enum.dart';
+import 'package:todolist/presenter/widgets/buttons/create_button_widget.dart';
+import 'package:todolist/presenter/widgets/inputs/create_input_widget.dart';
+import 'package:todolist/presenter/widgets/line_widget.dart';
 
 class NewWorkModalWidget extends StatefulWidget {
   const NewWorkModalWidget({Key? key}) : super(key: key);

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todolist/Infrastructure/enums/sizes_enum.dart';
+import 'package:todolist/infrastructure/enums/sizes_enum.dart';
 
 class CreateInputText extends StatelessWidget{
   final String placeholder;

@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:todolist/Infrastructure/enums/routes_enum.dart';
+import 'package:todolist/infrastructure/enums/routes_enum.dart';
 
 class TodoListWidget extends StatelessWidget {
   @override

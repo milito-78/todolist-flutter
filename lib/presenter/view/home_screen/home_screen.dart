@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:todolist/Infrastructure/enums/sizes_enum.dart';
-import 'package:todolist/Presenter/widgets/custom_appbar_widget.dart';
-import 'package:todolist/Presenter/widgets/new_work_modal_widget.dart';
+import 'package:todolist/infrastructure/enums/sizes_enum.dart';
+import 'package:todolist/presenter/widgets/custom_appbar_widget.dart';
+import 'package:todolist/presenter/widgets/new_work_modal_widget.dart';
 import 'package:todolist/presenter/widgets/todo_lists/todolists_widget.dart';
 import 'package:todolist/presenter/widgets/todolist_filter_widget.dart';
 

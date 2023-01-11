@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:todolist/Infrastructure/enums/routes_enum.dart';
-import 'package:todolist/Presenter/view/auth/login_screen.dart';
-import 'package:todolist/Presenter/view/home_screen/home_screen.dart';
-import 'package:todolist/Presenter/view/splash/splash_screen.dart';
+import 'package:todolist/infrastructure/enums/routes_enum.dart';
+import 'package:todolist/presenter/view/auth/login_screen.dart';
+import 'package:todolist/presenter/view/home_screen/home_screen.dart';
+import 'package:todolist/presenter/view/splash/splash_screen.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:todolist/app/users/check_login/check_user_login_app.dart';
 

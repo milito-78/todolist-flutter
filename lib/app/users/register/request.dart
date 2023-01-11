@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:todolist/Infrastructure/api/client.dart';
+import 'package:todolist/infrastructure/api/client.dart';
 import 'package:todolist/app/users/register/register_model.dart';
 import 'package:todolist/app/users/register/response.dart';
 import 'package:http/http.dart' as http;
