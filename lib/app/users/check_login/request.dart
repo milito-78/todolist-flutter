@@ -1,5 +1,3 @@
-import 'package:todolist/app/users/register/data.dart';
-import 'package:todolist/app/users/register/register_model.dart';
 import 'package:todolist/infrastructure/api/client.dart';
 import 'package:todolist/infrastructure/api/response.dart';
 import 'package:todolist/infrastructure/api/validation_error_model.dart';
@@ -11,13 +9,13 @@ class Request {
 
   Request(this._sender);
 
-  Future<Data> send(RegisterModel body) async {
+  Future<Data> send(String token) async {
     try {
       var response = await _sender.post(uri, body.toMap());
       return new Data(response);
     } on ValidationException catch (e) {
       return new Future(
-        () => new Data(
+            () => new Data(
           Response.error(
             e.cause,
             new ValidationErrorModel(e.errorBags["errors"]),

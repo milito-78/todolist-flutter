@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:todolist/infrastructure/enums/routes_enum.dart';
+import 'package:todolist/presenter/bootstrap/routes.dart';
 import 'package:todolist/infrastructure/enums/sizes_enum.dart';
 import 'package:todolist/presenter/widgets/buttons/submit_button_widget.dart';
 import 'package:todolist/presenter/widgets/inputs/input_widget.dart';

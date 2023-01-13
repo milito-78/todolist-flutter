@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:todolist/infrastructure/enums/routes_enum.dart';
+import 'package:todolist/presenter/bootstrap/routes.dart';
 
 class CustomAppbarWidget extends StatelessWidget {
   final bool disableProfileClick;

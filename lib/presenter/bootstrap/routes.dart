@@ -24,8 +24,6 @@ class RouteName {
 }
 
 class Routes {
-  static const MAIN_URL = "milito.ir/";
-
   static Map<String,WidgetBuilder> routes = {
     RouteName.splash            : (context) => SplashScreen(),
     RouteName.change_password   : (context) => ChangePasswordScreen(),

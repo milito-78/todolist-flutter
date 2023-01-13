@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_countdown_timer/current_remaining_time.dart';
 import 'package:flutter_countdown_timer/flutter_countdown_timer.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
-import 'package:todolist/infrastructure/enums/routes_enum.dart';
+import 'package:todolist/presenter/bootstrap/routes.dart';
 import 'package:todolist/infrastructure/enums/sizes_enum.dart';
 import 'package:todolist/presenter/widgets/buttons/submit_button_widget.dart';
 import 'package:todolist/presenter/widgets/loading_widget.dart';
