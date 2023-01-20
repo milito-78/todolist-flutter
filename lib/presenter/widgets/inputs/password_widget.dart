@@ -5,7 +5,17 @@ import 'package:todolist/infrastructure/enums/sizes_enum.dart';
 class PasswordInput extends StatefulWidget{
   final String placeholder;
   final String name;
-  PasswordInput(this.name,this.placeholder);
+  final String? Function(String?)? validation;
+  final TextEditingController? controller;
+
+  PasswordInput(this.name, this.placeholder, [this.validation,this.controller]);
+
+  String? validator(String? value) {
+    if (value == null || value.isEmpty) {
+      return 'Please $name field must be filled';
+    }
+    return null;
+  }
 
   @override
   State<PasswordInput> createState() => _PasswordInputState(this.name,this.placeholder);
@@ -39,7 +49,9 @@ class _PasswordInputState extends State<PasswordInput> {
     return Container(
       width: Input.width,
       height: Input.height,
-      child: TextField(
+      child: TextFormField(
+        validator: widget.validation?? widget.validator,
+        controller: widget.controller??TextEditingController(),
         obscureText: !this.showPassword,
         enableSuggestions: false,
         autocorrect: false,

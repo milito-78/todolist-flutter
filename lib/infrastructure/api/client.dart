@@ -7,7 +7,7 @@ import 'package:todolist/infrastructure/api/server_error_exception.dart';
 import 'package:todolist/infrastructure/api/too_many_attempts_exception.dart';
 import 'package:todolist/infrastructure/api/validation_exception.dart';
 
-class Client{
+abstract class Client{
   final String mainUrl;
 
   Client(this.mainUrl);
@@ -51,4 +51,11 @@ class Client{
   void tooManyAttempts(Map<String, dynamic> bags) => throw new TooManyAttemptsException(bags["message"],bags);
 
   void serverError() => throw new ServerErrorException();
+
+  Future post(String uri,[Map<String, dynamic> body = const {},Map<String, String> headers = const {}]);
+  Future get(String uri,[Map<String, dynamic> queryParams = const {},Map<String, String> headers = const {}]) ;
+  Future put(String uri,Map<String, dynamic> body,[Map<String, String> headers = const {}]) ;
+  Future patch(String uri,Map<String, dynamic> body,[Map<String, String> headers = const {}]);
+  Future delete(String uri, [Map<String, dynamic> body = const {},Map<String, String> headers = const {}]);
+  Future option(String uri,[Map<String, dynamic> queryParams = const {},Map<String, String> headers = const {}]) ;
 }

@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:todolist/infrastructure/enums/routes_enum.dart';
 import 'package:todolist/presenter/view/auth/login_screen.dart';
 import 'package:todolist/presenter/view/home_screen/home_screen.dart';
 import 'package:todolist/presenter/view/splash/splash_screen.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:todolist/app/users/check_login/check_user_login_app.dart';
+
 
 class MainScreen extends StatelessWidget {
-  final CheckUserLoginApp userClass;
-  MainScreen(this.userClass);
+  final appdata = GetStorage(); // instance of GetStorage
 
   Future<Widget> checkLogin() async{
-    if(this.userClass.checkLogin()){
+    if(true){//this.userClass.checkLogin()
       return LoginScreen();
     }else{
       return HomeScreen();
@@ -23,7 +22,6 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Todo List',
-        routes: Routes.routes,
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           scaffoldBackgroundColor: Colors.grey[50],

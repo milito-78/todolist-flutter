@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:todolist/infrastructure/enums/routes_enum.dart';
+import 'package:get/get.dart';
+import 'package:todolist/bootstrap/route/routes_enum.dart';
+import 'package:todolist/controller/register/register_controller.dart';
 import 'package:todolist/infrastructure/enums/sizes_enum.dart';
 import 'package:todolist/presenter/widgets/buttons/submit_button_widget.dart';
 import 'package:todolist/presenter/widgets/inputs/input_widget.dart';
@@ -8,19 +10,12 @@ import 'package:todolist/presenter/widgets/loading_widget.dart';
 import 'package:todolist/presenter/widgets/auth_logo_widget.dart';
 import 'package:todolist/presenter/widgets/buttons/auth_text_button_widget.dart';
 
-class RegisterScreen extends StatefulWidget {
-  const RegisterScreen({Key? key}) : super(key: key);
-
-  @override
-  _RegisterScreenState createState() => _RegisterScreenState();
-}
-
-class _RegisterScreenState extends State<RegisterScreen> {
-  bool showPassword = false;
+class RegisterScreen extends GetView<RegisterController> {
+  RxBool showPassword = false.obs;
   final GlobalKey<State> _keyLoader = new GlobalKey<State>();
 
   showPasswordHandle() {
-    this.showPassword = this.showPassword ? false : true;
+    this.showPassword(this.showPassword.isTrue ? false : true);
   }
 
   Icon eyeIcon = Icon(
@@ -65,7 +60,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   height: Input.height,
                   child: TextField(
                     textInputAction: TextInputAction.next,
-                    obscureText: !this.showPassword,
+                    obscureText: !this.showPassword.isTrue,
                     enableSuggestions: false,
                     autocorrect: false,
                     decoration: InputDecoration(
@@ -83,14 +78,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               width: 0.8, color: Colors.grey.shade800)),
                       hintText: "Password",
                       suffixIcon: IconButton(
-                        icon: this.showPassword
+                        icon: this.showPassword.isTrue
                             ? this.eyeShowIcon
                             : this.eyeIcon,
-                        onPressed: () {
-                          setState(() {
-                            this.showPasswordHandle();
-                          });
-                        },
+                        onPressed: () => showPasswordHandle(),
                       ),
                     ),
                   ),
@@ -102,7 +93,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   width: Input.width,
                   height: Input.height,
                   child: TextField(
-                    obscureText: !this.showPassword,
+                    obscureText: !this.showPassword.isTrue,
                     enableSuggestions: false,
                     autocorrect: false,
                     decoration: InputDecoration(
@@ -120,14 +111,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               width: 0.8, color: Colors.grey.shade800)),
                       hintText: "Password Confirmation",
                       suffixIcon: IconButton(
-                        icon: this.showPassword
+                        icon: this.showPassword.isTrue
                             ? this.eyeShowIcon
                             : this.eyeIcon,
-                        onPressed: () {
-                          setState(() {
-                            this.showPasswordHandle();
-                          });
-                        },
+                        onPressed: () => showPasswordHandle(),
                       ),
                     ),
                   ),

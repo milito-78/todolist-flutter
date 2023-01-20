@@ -24,18 +24,16 @@ class RouteName {
 }
 
 class Routes {
-  static const MAIN_URL = "milito.ir/";
-
-  static Map<String,WidgetBuilder> routes = {
-    RouteName.splash            : (context) => SplashScreen(),
-    RouteName.change_password   : (context) => ChangePasswordScreen(),
-    RouteName.profile           : (context) => ProfileScreen(),
-    RouteName.home              : (context) => HomeScreen(),
-    RouteName.login             : (context) => LoginScreen(),
-    RouteName.register          : (context) => RegisterScreen(),
-    RouteName.todo_details      : (context) => TodoDetailsScreen(),
-    RouteName.check_code        : (context) => CodeScreen(),
-    RouteName.reset_password    : (context) => ResetPasswordScreen(),
-    RouteName.forget_password   : (context) => ForgetPasswordScreen()
+  static Map<String,Widget Function()> routes = {
+    RouteName.splash            : () => SplashScreen(),
+    RouteName.change_password   : () => ChangePasswordScreen(),
+    RouteName.profile           : () => ProfileScreen(),
+    RouteName.home              : () => HomeScreen(),
+    RouteName.login             : () => LoginScreen(),
+    RouteName.register          : () => RegisterScreen(),
+    RouteName.todo_details      : () => TodoDetailsScreen(),
+    RouteName.check_code        : () => CodeScreen(),
+    RouteName.reset_password    : () => ResetPasswordScreen(),
+    RouteName.forget_password   : () => ForgetPasswordScreen()
   };
 }
